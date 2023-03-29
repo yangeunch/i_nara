@@ -71,13 +71,11 @@ main {
             font-family: $font-jua;   
             display:flex; flex-flow:row nowrap;
             align-items: center;
-            
         }
         .slide_wrap {margin-top:80px;
-            .slide_container {
+            .slide_container {margin-bottom:300px;
                 display:grid; 
                 grid-template-columns: repeat(3,1fr);
-                grid-template-rows:repeat(3,300px);
                 .slide1 {
                 background:#ffe552 
                 url(../images/event_image_0_20221028085348_35465.png);}
@@ -98,8 +96,68 @@ main {
                                 line-height: 1.5;
                                 }
                         p {}
+                        a {
+                            img {
+                                margin-top:100px;
+                            }
+                        }
                         }
             }
         }
     }//e:event_wrap
+    .child {width:1200px; margin:0 auto;
+        h1 {
+            font-size:3rem; font-family: $font-jua;
+        }
+        p {margin:20px 0;}
+        .more {
+            font-family: $font-jua;   
+            display:flex; flex-flow:row nowrap;
+            align-items: center; margin-bottom:100px;
+        }
+        .child_wrap {
+            .child_container {margin-bottom:300px;
+                display:grid; grid-template-columns:repeat(5,1fr);
+                height:300px; 
+                
+                .child1 {
+                    background:url(../images/thumbnail_image_1_20221104060651_67302.jpeg);
+                    h2 {background: #ffcfd8;}
+                }
+                .child2 {
+                    background:url(../images/thumbnail_image_2_20221104060915_64092.jpeg);
+                    h2 {background: #b2e9de;}
+                }
+                .child3 {
+                    background:url(../images/thumbnail_image_3_20221104060928_38608.jpeg);
+                    h2 {background: #ffe552;}
+                }
+                .child4 {
+                    background:url(../images/thumbnail_image_4_20221104060946_71750.jpeg);
+                    h2 {background: #b2e9de;}
+                }
+                .child5 {
+                    background:url(../images/thumbnail_image_5_20221104060955_15559.jpeg);
+                    h2 {background: #ffcfd8;}
+                }
+                .children {
+                    background-size:100%; background-repeat:no-repeat;
+                    background-position:center; padding:30px;
+                    border-radius:20px; margin-right:20px; 
+                    position:relative;
+                    h2 {
+                        font-weight: 700; padding:10px 15px;
+                        display:inline-block;
+                        border-radius:20px;
+                    }
+                    a {}
+                    a img {
+                        position:absolute; left:50%; top:50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .children:last-child {margin:0;}
+            }
+        }
+    }//e:child
 }//e:main
